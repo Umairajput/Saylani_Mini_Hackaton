@@ -1,0 +1,65 @@
+body 
+    { background-image: url(./photo.jpg);
+        background-size: 50%, 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        
+    }
+
+#authBox{
+        margin: 50px auto 50px auto;
+        background-color: transparent;
+        height: 500px;
+        width: 1000px;
+        text-align: center;
+        border: 2px solid white;
+        box-shadow: 0px 0px 75px 45px inset rgb(84, 228, 84);
+        border-radius: 10px; 
+    }
+#dashboardHeading{
+    letter-spacing: 6px;
+}
+
+.button{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown{
+    margin-top: 50px;
+    text-align: center;
+    color: #f9f9f9;
+  }
+  .main{
+    margin: auto;
+    padding: 6rem 8rem;
+    border: 1px solid #003566;
+    border-radius: 1.2rem;
+    color: var(--white);
+    font-size: 1.1rem;
+    background-color: #001b35;
+    width: 300px;
+  }
+  .timing{
+    color: black;
+    cursor: pointer;
+  }
