@@ -10,7 +10,91 @@
 </head>
 
 <body>
-    <div class="main">
+    <div class="admin_main">
+        <center>
+            <h1 class="heading">
+                CLASS TIMINGS 2021-22
+            </h1>
+            <h2>
+                <input id="input15" class="input one" value="BATCH - 08" />
+            </h2>
+            <table border="1" width="1200" height="1" style="margin-top:20px ;">
+                <thead>
+                    <th colspan="8">SCHEDULE</th>
+                </thead>
+                <thead>
+                    <th>DAYS</th>
+                    <th colspan="8">TIMING</th>
+                </thead>
+                <thead>
+                    <th></th>
+                    <th colspan="3"><b><input id="input1" class="input" type="text" value="" /></b>
+                    </th>
+                    <th colspan="8"><b><input id="input2" class="input" type="text" value="" /></b>
+                    </th>
+                </thead>
+                <tbody>
+                    <tr align="center">
+                        <th>MONDAY</th>
+                        <td colspan="3"><input id="input3" class="input" type="text"
+                                value="" />
+                        </td>
+                        <td colspan="7"><input id="input4" class="input" type="text"
+                                value="" />
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <th>TUESDAY</th>
+                        <td colspan="3"><input id="input5" class="input" type="text"
+                                value="" /></td>
+                        <td colspan="7"><input id="input6" class="input" type="text"
+                                value="" />
+                        </td>
+                    </tr>
+                    <tr heigth="1000" align="center">
+                        <th>WEDNESDAY</th>
+                        <td colspan="3"><input id="input7" class="input" type="text"
+                                value="" />
+                        </td>
+                        <td colspan="7"><input id="input8" class="input" type="text"
+                                value="" />
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <th>THURSDAY</th>
+                        <td colspan="3"><input id="input9" class="input" type="text"
+                                value="" /></td>
+                        <td colspan="7"><input id="input10" class="input" type="text"
+                                value="" /></td>
+                    </tr>
+                    <tr align="center">
+                        <th>FRIDAY</th>
+                        <td colspan="3"><input id="input11" class="input" type="text"
+                                value="" /></td>
+                        <td colspan="7"><input id="input12" class="input" type="text"
+                                value="" />
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <th>SATURDAY</th>
+                        <td colspan="3"><input id="input13" class="input" type="text"
+                                value="" /></td>
+                        <td colspan="7"><input id="input14" class="input" type="text"
+                                value="" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+            <br />
+            <button id="updateDoc">Update</button>
+        </center>
+    </div>
+    <script src="./admin.js"></script>
+    <script src="./adminPannel.js" type="module"></script>
+</body>
+
+</html>
+<!-- <div class="main">
         <div class="dropdown">
             <span>Class Timing</span>
             <div class="dropdown-content">
@@ -22,8 +106,9 @@
         <div class="dropdown">
             <span>Schedule of classes</span>
             <div class="dropdown-content">
-                <p class="timing">09AM to 11AM</p>
-                <p class="timing">11AM to 01AM</p>
+                <p id="monday" onclick="Monday()" class="timing">Monday</p>
+                <p id="wednesday" onclick="Wednesday()" class="timing">Wednesday</p>
+                <p id="friday" class="timing" onclick="Friday()">Friday</p>
             </div>
         </div>
         <br>
@@ -58,9 +143,4 @@
                 <p class="timing">B</p>
             </div>
         </div>
-    </div>
-    <script src="./admin.js"></script>
-    <script src="./adminPannel.js"></script>
-</body>
-
-</html>
+    </div> -->
