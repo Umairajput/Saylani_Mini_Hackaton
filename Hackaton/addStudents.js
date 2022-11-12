@@ -21,6 +21,7 @@ const db = getFirestore(app);
 
 let name = document.getElementById("name")
 let fathername = document.getElementById("fathername")
+let rollNumber = document.getElementById("rollNumber")
 let contact = document.getElementById("contact")
 let CNIC = document.getElementById("CNIC")
 let course = document.getElementById("course")
@@ -42,10 +43,11 @@ picture.addEventListener("change", function () {
     reader.readAsDataURL(this.files[0]);
 });
 const sendstudentDAta = async () => {
-    if (name.value != "" && fathername.value != "" && contact.value != "" && CNIC.value != "" && picture.files != "" && course.value != "" && sir.value != "") {
+    if (name.value != "" && fathername.value != "" && rollNumber.value != "" && contact.value != "" && CNIC.value != "" && picture.files != "" && course.value != "" && sir.value != "") {
         await addDoc(collection(db, "Students"), {
             studentname: name.value,
             fathername: fathername.value,
+            rollNumber:rollNumber.value,
             contact: contact.value,
             CNIC: CNIC.value,
             sirName: sir.value,
@@ -60,7 +62,7 @@ const sendstudentDAta = async () => {
         name.value = ""
         fathername.value = ""
         contact.value = ""
-        CNIC = ""
+        CNIC.value = ""
 
     }
     else {

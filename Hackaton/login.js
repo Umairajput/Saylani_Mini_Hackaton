@@ -33,11 +33,16 @@ async function Login() {
     const docSnap = await getDoc(docRef);
     if (docSnap.exists()) {
         if(login_email == docSnap.data().email && login_password == docSnap.data().password){
+            swal({
+                title: "Good job!",
+                text: "You clicked the button!",
+                icon: "success",
+                button: "Aww yiss!",
+              });
             window.open("admin.html")
         }
-        console.log("Document data:", docSnap.data());
     } else {
-        console.log("No such document!");
+        swal("User Not Found")
     }
 }
 let login_btn = document.getElementById("login_btn")
