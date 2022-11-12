@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
 import { getAuth, } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
-import { getFirestore, addDoc } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
+import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
 
 
 const firebaseConfig = {
@@ -12,6 +12,7 @@ const firebaseConfig = {
     appId: "1:787899002082:web:ee8a4486a96063378502bb",
     measurementId: "G-D5WQSCY0QB"
 };
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 const db = getFirestore(app);
@@ -56,6 +57,11 @@ const sendstudentDAta = async () => {
             icon: "success",
             button: "Aww yess!",
         });
+        name.value = ""
+        fathername.value = ""
+        contact.value = ""
+        CNIC = ""
+
     }
     else {
         swal("Please Enter Values")
