@@ -10,7 +10,6 @@ const firebaseConfig = {
     appId: "1:787899002082:web:ee8a4486a96063378502bb",
     measurementId: "G-D5WQSCY0QB"
 };
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 let name = document.getElementById("name")
@@ -18,7 +17,6 @@ let contain = document.getElementById("contain")
 window.onload = async() => {
     const querySnapshot = await getDocs(collection(db, "Students"));
     querySnapshot.forEach((doc) => {
-        // doc.data() is never undefined for query doc snapshots
         console.log(doc.id, " => ", doc.data());
         let div = `
         <div class="card">

@@ -63,6 +63,7 @@ const sendstudentDAta = async () => {
         fathername.value = ""
         contact.value = ""
         CNIC.value = ""
+        rollNumber.value = ""
 
     }
     else {
